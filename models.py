@@ -21,7 +21,7 @@ class Imovel(Base):
 
 class Cliente(Base):
     __tablename__ = "clientes"
-    id = Column("id", primary_key=True, autoincrement=True)
+    id = Column("id", Integer, primary_key=True, autoincrement=True)
     nome = Column("nome", String)
     email = Column("email", String)
     fone = Column("fone", String)
